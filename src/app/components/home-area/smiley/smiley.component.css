@@ -1,0 +1,7 @@
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transform: scale(2);
+}

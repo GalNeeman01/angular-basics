@@ -1,0 +1,12 @@
+<div class="box calc">
+    <input type="number" [(ngModel)]="a">
+    <select [(ngModel)]="operator">
+        <option selected value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" [(ngModel)]="b">
+    <button (click)="calculate()">=</button>
+    <span [textContent]="result">__</span>
+</div>

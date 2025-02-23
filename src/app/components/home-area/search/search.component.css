@@ -1,0 +1,9 @@
+.box {
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    width: 50%;
+    padding: 5px;
+    justify-content: space-around;
+    border-radius: 5px;
+}
