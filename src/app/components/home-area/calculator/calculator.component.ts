@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -13,7 +13,14 @@ export class CalculatorComponent {
     public operator : string = "*";
     public result : number = 0;
 
+    @Output()
+    public answerFound = new EventEmitter();
+
     public calculate() : void {
         this.result = eval(this.a + this.operator + this.b);
+
+        if (this.result === 42) {
+            this.answerFound.emit();
+        }
     }
 }

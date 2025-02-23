@@ -17,4 +17,8 @@ export class HomeComponent {
     public displaySmiley(smiley: string) : void {
         this.reportedSmiley = smiley;
     }
+
+    public answerToUniverse() : void {
+        alert("Found the answer to the universe! it's 42!");
+    }
 }
